@@ -1,0 +1,155 @@
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Retro Gaming", sans-serif;
+  text-align: center;
+  background-color: #211e20;
+  color: #a0a08b;
+}
+
+@font-face {
+  font-family: "Retro Gaming";
+  src: url("./assets/Retro Gaming.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.success-message{
+  background-color: rgba(152,251,152,0.2);
+  padding: 10px;
+}
+.login-container {
+  padding-top: 100px;
+}
+
+.register-input{
+  all: unset;
+  width: calc(16rem * 2 / 3);
+  height: calc(5.188rem * 2 / 3);
+  background-color: transparent;
+  image-rendering: pixelated;
+  border: none;
+  background-image: url("./assets/InputBar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.register-form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  all: unset;
+  width: calc(16rem * 2 / 3);
+  height: calc(5.188rem * 2 / 3);
+  background-color: transparent;
+  image-rendering: pixelated;
+  border: none;
+  background-image: url("./assets/InputBar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+:autofill {
+  all: unset;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  text-align: center;
+  padding-right: 20px;
+}
+.btn__primary {
+  all: unset;
+  color: #e9efec;
+}
+.btn__primary:hover{
+  color: #a0a08b;
+}
+#login-select {
+  width: 10px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  visibility: visible;
+}
+
+.bounce {
+  animation: bounce ease 3s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0px, 0, 0);
+  }
+  25% {
+    transform: translate3d(10px, 0, 0);
+  }
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .login-container {
+    padding: 0px;
+    width: 100%;
+  }
+  .input {
+    font-size: 25px;
+  }
+  #login-select {
+    visibility: visible;
+    width: 50px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    animation: bounce ease 3s infinite;
+    animation-timing-function: linear;
+  }
+  .bounce {
+    animation: bounce ease 3s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translate3d(0px, 0, 0);
+    }
+    25% {
+      transform: translate3d(10px, 0, 0);
+    }
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+    100% {
+      transform: translate3d(0px, 0, 0);
+    }
+  }
+  .input {
+    width: calc(32rem);
+    height: calc(10.376rem);
+  }
+
+  .login-title {
+    font-size: 100px;
+    margin-bottom: 10px;
+  }
+
+  .btn__primary {
+    font-size: 75px;
+  }
+}

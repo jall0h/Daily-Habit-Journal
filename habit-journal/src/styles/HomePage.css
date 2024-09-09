@@ -1,0 +1,83 @@
+.arrow-btn {
+  all: unset;
+  overflow: hidden;
+}
+
+.arrow-btn img {
+  width: 2.7rem;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+.arrow-btn:active {
+  background-color: black;
+}
+
+.nav-btn__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* Journal Entry */
+
+#text-bar {
+  resize: none;
+  height: 100%;
+  width: 100%;
+  background-color:#e9efec;
+}
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+  height: 150px;
+}
+
+/* Habits */
+.habit-list-container {
+  max-height: 225px;
+  overflow-y: scroll;
+}
+.habit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.habit-title {
+  display: inline-block;
+  padding: 10px;
+  font-size: 15px;
+  max-width: 50ch;
+  overflow-wrap: break-word;
+}
+
+/*  Modal */
+#editModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* .modal-item-title p {
+  display: inline-block;
+} */
+
+.modal-content {
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+
+.btn__secondary{
+  background-color: #e9efec;
+  border-radius: 30px;
+}
