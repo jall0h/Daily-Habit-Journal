@@ -1,9 +1,9 @@
-#Daily Habit Journal
+# Daily Habit Journal
 A website that allows tracking of daily habits alongside a journal entry
 
-#Installation
+# Installation
 Commands from base folder
-##Backend
+## Backend
 ```
 cd backend
 ```
@@ -16,13 +16,13 @@ python -m venv env
 pip install -r requirements.txt
 ```
 
-##FrontEnd
+## FrontEnd
 ```
 cd habit-journal
 npm install
 ```
 
-#Configuration
+# Configuration
 Set up the domains used for the front and backend in the environment file
 ```
 BACKEND="Enter IP or domain (specify port if needed)"
